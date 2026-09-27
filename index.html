@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>梦角传讯 · 字卡 · 信件 · 群聊</title>
+  <title>𝐅𝐎𝐑𝐄𝐕𝐄𝐑</title>
   <style>
+    <link rel="icon" type="image/png" sizes="192x192" href="https://share.google/images/Br5yTCYjNbnjvrxse">
     * {
       margin: 0;
       padding: 0;
@@ -2816,7 +2817,7 @@
           empty.className = 'system-hint';
           empty.textContent = contact.type === 'group'
             ? '👥 群聊已创建，发送消息开始对话吧'
-            : '✨ 发送消息或信件，梦角会以字卡回应 ✨';
+            : '✨️ 发送消息或信件，梦角会以字卡回应 ✨️';
           messagesContainer.appendChild(empty);
         } else {
           msgs.forEach(msg => addMessageToDOM(msg, contact));
@@ -3673,7 +3674,7 @@
         }
       }
       function renderMemberSelector() {
-        const defaultNames = ['梦角', '星尘', '月影', '雾语', '夜昙', '微光'];
+        const defaultNames = ['梦角'];
         const existingNames = contacts.filter(c => c.type === 'contact').map(c => c.name);
         const allNames = [...new Set([...defaultNames, ...existingNames])];
         memberSelector.innerHTML = '';
